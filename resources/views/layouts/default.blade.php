@@ -41,7 +41,7 @@
                             <img src="https://flagcdn.com/w40/fr.png" alt="Drapeau français" class="w-4 h-4  ml-2">
                         </button>
                         <div id="dropdownMenu"
-                            class="absolute  mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                            class="absolute  mt-2  z-50 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
                             <ul class="py-1">
                                 <li>
                                     <a href="/"
@@ -65,7 +65,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-blue-800">
+        <div class="bg-gray_color">
             <div class="container mx-auto lg:px-4">
                 <button id="menu-toggle" class="text-white lg:hidden focus:outline-none hover:bg-primary_color">
                     <i class="fas fa-bars text-4xl p-1"></i>
@@ -78,7 +78,7 @@
                         <li class="lg:px-6 px-2 py-2 lg:mr-6 relative group hover:bg-primary_color">
                             <a href="#">Missions</a>
                             <ul
-                                class="lg:absolute  opacity-80 top-10 left-0 right-0 lg:w-56 lg:hidden hidden group-hover:block bg-blue-800 hover:bg-primary_color ">
+                                class="lg:absolute z-10  opacity-80 top-10 left-0 right-0 lg:w-56 lg:hidden hidden group-hover:block bg-primary_color   hover:bg-primary_color ">
                                 <li class=" py-2 hover:bg-blue-400 px-2">
                                     <a href="#">Mission 1</a>
                                 </li>
@@ -102,7 +102,7 @@
                         <li class="lg:px-6 px-2 py-2 lg:mr-6 relative group hover:bg-primary_color">
                             <a href="#">Actualités</a>
                             <ul
-                                class="lg:absolute  opacity-80 top-10 left-0 right-0 lg:w-56 lg:hidden hidden group-hover:block bg-blue-800 hover:bg-primary_color ">
+                                class="lg:absolute z-10  opacity-80 top-10 left-0 right-0 lg:w-56 lg:hidden hidden group-hover:block bg-primary_color  hover:bg-primary_color ">
                                 <li class=" py-2 hover:bg-blue-400 px-2">
                                     <a href="#">Actualités 1</a>
                                 </li>
@@ -123,72 +123,39 @@
         </div>
     </header>
     <section class="bg-gray-200">
-        <div id="carousel" class="relative  mx-auto overflow-hidden">
-            <!-- Conteneur des slides -->
+        <div class="overflow-hidden">
             <div id="carousel-inner" class="flex transition-transform duration-700 ease-in-out">
-                <!-- Slide 1 -->
-                <div class="min-w-full flex flex-col items-center relative">
+                <div class="min-w-full flex flex-col items-start relative">
                     <img src="assets/images/test.jpg" class="w-full h-auto object-cover">
                     <div id="contenu"
-                        class="absolute top-3/4 left-1/3 transform -translate-x-[55%] -translate-y-1/2 bg-white/70 p-4">
-                        <h2 class="text-2xl font-bold text-blue-900">
-                            Rencontre du président Leslie Voltaire avec le Ministre du MPTPC
-                        </h2>
-                        <p class="mt-2 text-gray-700">
-                            Découvrez les dernières actions et engagements de notre ministère.
-                        </p>
-                        <button class="mt-4 px-6 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800">
-                            En savoir plus
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="min-w-full flex flex-col items-center relative">
-                    <img src="assets/images/test2.jpg" class="w-full h-auto object-cover">
-                    <div id="contenu"
-                        class="absolute top-3/4 left-1/3 transform -translate-x-[55%] -translate-y-1/2 bg-white/70 p-4 rounded-lg">
-                        <h2 class="text-2xl font-bold text-blue-900">
-                            Conférence économique nationale
-                        </h2>
-                        <p class="mt-2 text-gray-700">
-                            Les grandes réformes pour un avenir durable.
-                        </p>
-                        <button class="mt-4 px-6 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800">
-                            En savoir plus
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="min-w-full flex flex-col items-center relative">
-                    <img src="assets/images/test3.jpg" class="w-full h-auto object-cover">
-                    <div id="contenu"
-                        class="absolute top-3/4 left-1/3 transform -translate-x-[55%] -translate-y-1/2 bg-white/70 p-4 rounded-lg">
+                        class="container mx-auto absolute top-1/2 bg-white/90 p-4 lg:w-[40%] left-48 transition-transform duration-1000 ease-in-out">
                         <h2 class="text-2xl font-bold text-blue-900">
                             Forum international du développement
                         </h2>
                         <p class="mt-2 text-gray-700">
-                            Les leaders mondiaux réunis pour discuter des solutions innovantes.
+                            Les leaders mondiaux réunis pour discuter des solutions innovantes. Les leaders mondiaux
+                            réunis pour discuter des solutions innovantes. Les leaders mondiaux réunis pour discuter des
+                            solutions innovantes.Les leaders mondiaux réunis pour discuter des solutions innovantes.
                         </p>
-                        <button class="mt-4 px-6 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800">
+                        <button class="mt-4 px-6 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 p-2">
                             En savoir plus
                         </button>
                     </div>
                 </div>
-            </div>
 
-            <!-- Boutons de navigation -->
-            <button id="prev"
-                class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-700">
-                ◀
-            </button>
-            <button id="next"
-                class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-700">
-                ▶
-            </button>
+                <!-- Boutons de navigation -->
+                <button id="prev"
+                    class="absolute left-4 top-1/3 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-md hover:bg-gray-700">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button id="next"
+                    class="absolute right-4 top-1/3 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-md hover:bg-gray-700">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
         </div>
     </section>
+
 </body>
 
 </html>
