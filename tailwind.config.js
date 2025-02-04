@@ -6,6 +6,7 @@ export default {
             colors: {
                 primary_color: "#263660",
                 secondary_color: "#10162F",
+                third_color:"#B21D0A",
                 gray_color: "#ababab",
                 title_text: "#B21D0A",
                 whiteText: "#ffffff",

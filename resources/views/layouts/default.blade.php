@@ -10,7 +10,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="m-0 p-0 bg-gray-100 font-roboto">
+<body class="m-0 p-0  font-roboto">
     <header class="bg-primary_color text-white">
         <div class="container mx-auto px-4 py-1">
             <div class="flex flex-col lg:flex-row justify-between items-center">
@@ -122,39 +122,9 @@
             </div>
         </div>
     </header>
-    <section class="bg-gray-200">
-        <div class="overflow-hidden">
-            <div id="carousel-inner" class="flex transition-transform duration-700 ease-in-out">
-                <div class="min-w-full flex flex-col items-start relative">
-                    <img src="assets/images/test.jpg" class="w-full h-auto object-cover">
-                    <div id="contenu"
-                        class="container mx-auto absolute top-1/2 bg-white/90 p-4 lg:w-[40%] left-48 transition-transform duration-1000 ease-in-out">
-                        <h2 class="text-2xl font-bold text-blue-900">
-                            Forum international du développement
-                        </h2>
-                        <p class="mt-2 text-gray-700">
-                            Les leaders mondiaux réunis pour discuter des solutions innovantes. Les leaders mondiaux
-                            réunis pour discuter des solutions innovantes. Les leaders mondiaux réunis pour discuter des
-                            solutions innovantes.Les leaders mondiaux réunis pour discuter des solutions innovantes.
-                        </p>
-                        <button class="mt-4 px-6 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 p-2">
-                            En savoir plus
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Boutons de navigation -->
-                <button id="prev"
-                    class="absolute left-4 top-1/3 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-md hover:bg-gray-700">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <button id="next"
-                    class="absolute right-4 top-1/3 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-md hover:bg-gray-700">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
-            </div>
-        </div>
-    </section>
+    <main>
+        {{ $slot }}
+    </main>
 
 </body>
 
