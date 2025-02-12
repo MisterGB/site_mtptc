@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title }}</title>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
@@ -125,7 +126,73 @@
     <main>
         {{ $slot }}
     </main>
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Colonne 1 : Logo & Description -->
+                <div>
+                    <h2 class="text-xl font-bold">Mission</h2>
+                    <p class="mt-2 text-gray-400 text-sm">
+                        Votre partenaire en développement web et solutions digitales innovantes.
+                    </p>
+                </div>
 
+                <!-- Colonne 2 : Liens utiles -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">Liens utiles</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-blue-400">À propos</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Nos services</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Projets</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 : Services -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">Nos services</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-blue-400">Développement Web</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Applications Mobiles</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Intelligence Artificielle</a></li>
+                        <li><a href="#" class="hover:text-blue-400">SEO & Marketing</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 4 : Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">Contact</h3>
+                    <p class="text-gray-400 text-sm">Adresse : 29 Rue Toussaint Louverture, Delmas 33, Haiti</p>
+                    <p class="text-gray-400 text-sm">Email : contact@mtptc.gouv.ht</p>
+                    <p class="text-gray-400 text-sm">Téléphone : +509 1234 5678</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-400 text-xl">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 text-xl">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 text-xl">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 text-xl">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ligne de séparation -->
+            <div class="border-t border-gray-700 mt-6 pt-4 text-center text-gray-400 text-sm">
+                © 2025 MTPTC. Tous droits réservés.
+                <br>
+                <span class="text-gray-500">Site conçu par <a href="#"
+                        class="text-gray-400 hover:underline">Media Dev Solutionss</a></span>
+            </div>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>

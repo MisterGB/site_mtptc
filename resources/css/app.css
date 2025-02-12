@@ -4,4 +4,10 @@
 @tailwind utilities;
 
 
+.swiper-pagination-bullet {
+  display: none !important;
+}
+
+
+
 
