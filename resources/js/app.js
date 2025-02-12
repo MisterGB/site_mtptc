@@ -109,3 +109,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 500);
 });
 
+//Ajouter un effet Smooth Scroll en JavaScript
+document.addEventListener("DOMContentLoaded", function () {
+    const backToTop = document.getElementById("backToTop");
+
+    // Afficher / cacher le bouton en fonction du défilement
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            backToTop.style.display = "block";
+        } else {
+            backToTop.style.display = "none";
+        }
+    });
+
+    // Animation pour remonter en haut en douceur
+    backToTop.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
+});
