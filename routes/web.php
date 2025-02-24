@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ActualityController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,4 @@ use Illuminate\Support\Facades\Route;
 }); */
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
+Route::get('/actualites', [ActualityController::class, 'index'])->name('actualites');

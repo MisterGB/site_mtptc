@@ -40,7 +40,7 @@
                             class="inline-flex justify-center items-center w-full px-2 py-1 bg-gray-200 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 "
                             id="dropdownMenuButton" onclick="toggleDropdown()" aria-expanded="false">
                             FR
-                            <img src="https://flagcdn.com/w40/fr.png" alt="Drapeau français" class="w-4 h-4  ml-2">
+                            
                         </button>
                         <div id="dropdownMenu"
                             class="absolute  mt-2  z-50 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
@@ -73,14 +73,15 @@
                     <i class="fas fa-bars text-4xl p-1"></i>
                 </button>
                 <nav id="menu" class="lg:flex lg:space-x-20 lg:mt-2 flex-col lg:flex-row lg:items-center hidden">
-                    <ul class="lg:flex lg:items-center sm:m-0 ">
-                        <li class="lg:px-6 px-2 py-2 lg:mr-6 hover:bg-primary_color">
-                            <a href="#">Acceuil</a>
+                    <ul class="lg:flex lg:items-center sm:m-0 text-black ">
+                        <li
+                            class="{{ request()->routeIs('index') ? 'active' : '' }} lg:px-6 px-2 py-2 lg:mr-6 hover:bg-primary_color hover:text-white">
+                            <a href="/">Acceuil</a>
                         </li>
-                        <li class="lg:px-6 px-2 py-2 lg:mr-6 relative group hover:bg-primary_color">
+                        <li class="lg:px-6 px-2 py-2 lg:mr-6 relative group hover:bg-primary_color hover:text-white">
                             <a href="#">Missions</a>
                             <ul
-                                class="lg:absolute z-10  opacity-80 top-10 left-0 right-0 lg:w-56 lg:hidden hidden group-hover:block bg-primary_color   hover:bg-primary_color ">
+                                class="lg:absolute z-10  opacity-80 top-10 left-0 right-0 lg:w-56 lg:hidden hidden group-hover:block bg-primary_color hover:bg-primary_color text-white">
                                 <li class=" py-2 hover:bg-blue-400 px-2">
                                     <a href="#">Mission 1</a>
                                 </li>
@@ -89,34 +90,30 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="lg:px-6 px-2 py-2 lg:mr-6 hover:bg-primary_color">
+                        <li class="lg:px-6 px-2 py-2 lg:mr-6 hover:bg-primary_color hover:text-white">
                             <a href="#">Défis</a>
                         </li>
-                        <li class="lg:px-6 px-2 py-2 lg:mr-6 hover:bg-primary_color">
+                        <li class="lg:px-6 px-2 py-2 lg:mr-6 hover:bg-primary_color hover:text-white">
                             <a href="#">Services</a>
                         </li>
-                        <li class="lg:px-6 px-2 py-2 lg:mr-6 hover:bg-primary_color">
+                        <li class="lg:px-6 px-2 py-2 lg:mr-6 hover:bg-primary_color hover:text-white">
                             <a href="#">Projets</a>
                         </li>
-                        <li class="lg:px-6 px-2 py-2 lg:mr-6 hover:bg-primary_color">
+                        <li class="lg:px-6 px-2 py-2 lg:mr-6 hover:bg-primary_color hover:text-white">
                             <a href="#">Partenaires</a>
                         </li>
-                        <li class="lg:px-6 px-2 py-2 lg:mr-6 relative group hover:bg-primary_color">
-                            <a href="#">Actualités</a>
-                            <ul
-                                class="lg:absolute z-10  opacity-80 top-10 left-0 right-0 lg:w-56 lg:hidden hidden group-hover:block bg-primary_color  hover:bg-primary_color ">
-                                <li class=" py-2 hover:bg-blue-400 px-2">
-                                    <a href="#">Actualités 1</a>
-                                </li>
-                                <li class="py-2 hover:bg-blue-400 px-2">
-                                    <a href="#">Actualités 2</a>
-                                </li>
-                            </ul>
+                        <li class="lg:px-6 px-2 py-2 lg:mr-6 relative group hover:bg-primary_color hover:text-white">
+                            <a href="/actualites">Publications</a>
                         </li>
-                        <li class="lg:px-6 px-2 py-2 lg:mr-6 hover:bg-primary_color">
+                        <li
+                            class="{{ request()->routeIs('actualites') ? 'active' : '' }} lg:px-6 px-2 py-2 lg:mr-6 relative group hover:bg-primary_color hover:text-white">
+                            <a href="/actualites">Actualités</a>
+                        </li>
+                        <li class="lg:px-6 px-2 py-2 lg:mr-6 hover:bg-primary_color hover:text-white">
                             <a href="#">Recrutements</a>
                         </li>
-                        <li class="lg:px-6 px-2 py-2 lg:mr-6 hover:bg-primary_color">
+                        <li
+                            class="{{ request()->routeIs('contacts') ? 'active' : '' }} lg:px-6 px-2 py-2 lg:mr-6 hover:bg-primary_color hover:text-white">
                             <a href="#">Contacts</a>
                         </li>
                     </ul>
