@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\ActualityController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,4 +20,4 @@ use Illuminate\Support\Facades\Route;
 }); */
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
-Route::get('/actualites', [ActualityController::class, 'index'])->name('actualites');
+Route::get('/actualites', [NewsController::class, 'index'])->name('actualites');
